@@ -1,0 +1,647 @@
+/* --primary: #FEA116;
+--light: #F1F8FF;
+--dark: #0F172B;
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+</style>
+font-family: 'Kanit', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Pacifico', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500&family=Mukta:wght@300;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Mukta', sans-serif
+}
+header{
+    padding: 0.4rem;
+    background-color: #0F172B;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    color: white;
+    z-index: 99;
+}
+
+.logo{
+    display: flex;
+    cursor: pointer;
+}
+.logo img{
+    filter: grayscale(#fff);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+nav .active{
+    color: #FEA116;
+    text-decoration: underline;
+}
+nav a{
+    color: white;
+}
+
+nav h1{
+    font-size: 2.7rem;
+    color: #FEA116;
+}
+ul{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+nav ul a:hover{
+    color: #FEA116;
+}
+.btn{
+    background-color: #FEA116;
+    padding: 0.6rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #fea116d8;
+    transition: 1s;
+}
+
+.dropbtn{
+    background: none;
+    outline: none;
+    border: none;
+}
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+/* Hero Section code */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    color: white;
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(./img/bg-hero.jpg);
+}
+.hero-contant{
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-contant h2{
+    font-size: 4rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800; 
+}
+.hero-contant span{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800; 
+}
+.hero-contant p{
+    color: #ffffffce;
+}
+.hero img{
+    width: 33rem;
+    animation: DriftingClouds 15s linear infinite;
+}
+@keyframes DriftingClouds {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.hero .btn{
+    width: fit-content;
+    margin-top: 1rem;
+}
+.hero h2{
+    line-height: 1.2;
+}
+
+/* 
+main code */
+main{
+    padding: 0 5rem;
+}
+
+/* feature card css */
+.feature{
+    display: flex;
+    margin: 5rem 0;
+}
+.card{
+    width: 25rem;
+    border:2px #0F172B;
+    padding: 2rem;
+    border-radius: 5px;
+    color: #0f172bd5;
+}
+.card img{
+    width: 2rem;
+    height: inherit;
+    object-fit: contain;
+}
+.card .card-title{
+    font-size: 1.5rem;
+
+}
+
+.feature .card:hover{
+    color: rgb(245, 241, 241) !important;
+}
+
+.card:hover{
+   background-color: #FEA116;
+   transition: 0.7s;
+   cursor:pointer;
+}
+.card img{
+    width: 5rem;
+    border-radius: 50%;
+}
+
+
+/* About css code */
+.About-us{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0;
+   
+}
+.about-images img{
+    width: 15rem;
+}
+.about1{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.about2{
+    display: flex;
+    position: relative;
+    left: 4rem;
+    gap: 1rem;
+}
+.about-contant{
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    margin-left: 2rem;
+}
+.about-contant .btn{
+    width: fit-content;
+}
+.about-contant h3{
+    font-family: 'Pacifico', cursive;
+    color:#FEA116 ;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.about-contant h4{
+    font-size: 2.2rem;
+    color: #0F172B;
+}
+.about-contant p{
+    color: rgba(0, 0, 0, 0.589);
+}
+img .img-sm{
+    width: 10rem;
+}
+
+.about1 img:nth-child(2) {
+    width: 11rem;
+    height: 11rem;
+    position: relative;
+    top: 4rem;
+  }
+
+.about2 img:nth-child(1){
+    width: 11rem;
+    position: relative;
+    height: 11rem;
+    left: 0rem;
+} 
+.experience{
+    display: flex ;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.experience h3{
+    font-size: 4rem;
+    display: flex;
+    line-height: 1;
+}
+.years{
+    margin-right: 4rem;
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+}
+.popular{
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+}
+.experience span{
+    color: #0F172B;
+}
+
+.experience .line{
+    width: 3rem;
+    border: 2px solid #FEA116;
+    rotate: 90deg;
+    margin-bottom: 20px;
+}
+
+/* food menu css */
+.food-menu{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 5rem 0;
+}
+.food-menu h2{
+    font-family: 'Pacifico', 'cursive'; 
+    color: #fea116;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.food-menu h3{
+    font-size: 2.7rem;
+    color: #0F172B;
+    font-family: 'Nunito', sans-serif;
+    line-height: 0.7;
+    font-weight: 800;
+}
+.food-menu .menu-line{
+    width: 2rem;
+    border: 1px solid #FEA116;
+    margin: 0 1rem;
+    transform: rotate(180deg);
+    display: inline-block;
+}
+.food-types{
+    display: flex;
+    margin: 2.5rem 0;
+}
+.food-types .food-flex{
+    display: flex;
+    margin-right: 1rem;
+}
+.food-types .food-flex img{
+    width: 4rem;
+    height: auto;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+.food-flex h3{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #0f172b7c;
+}
+.food-flex h3 span{
+    color: #0F172B;
+    line-height: 2;
+}
+/* .food-menu hr{
+    border: 1px solid gray;
+    width: 30%;
+} */
+.food-recipes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+.food-recipes .recipe{
+    display: flex;
+    gap: 0.7rem;
+    width: inherit;
+}
+.food-recipes img{
+    border-radius: 50%;
+}
+.food-recipes .recipe-h-rs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.food-recipes .recipe-info{
+    width: 25rem;
+}
+.food-recipes h4{
+    font-size: 1.5rem;
+    color: #0F172B;
+}
+.food-recipes p{
+    color: #0f172ba1;
+}
+.food-recipes span{
+    font-size: 1.5rem;
+    color: #da8911;
+}
+
+
+/* online booking section css */
+.online-booking{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.online-booking img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+.online-booking img::after{
+    content: "";
+    position: absolute;
+    top: 20rem;
+    left: 10rem;
+    z-index: -92;
+    background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fscreenrec.com%2Fassets_dist%2Fscreenrec%2Fmedia%2Fhome%2Fplay-button.svg&tbnid=l36p9pN9MK6cWM&vet=10CIcBEDMoogFqFwoTCND7iLvv6IMDFQAAAAAdAAAAABAC..i&imgrefurl=https%3A%2F%2Fscreenrec.com%2F&docid=412v5podnfxKWM&w=600&h=600&itg=1&q=video%20button&ved=0CIcBEDMoogFqFwoTCND7iLvv6IMDFQAAAAAdAAAAABAC");
+}
+.online-booking .booking-form{
+    background-color: #0F172B;
+    color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+}
+.online-booking input{
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    margin:1rem 0rem 1rem 0;
+}
+.booking-form .name-margin{
+    margin-right: 1rem;
+}
+.booking-form .w{
+    width: 17rem;
+}
+.booking-form h3{
+    color: #da8911;
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.booking-form h3::after{
+    content: "";
+    width: 2rem;
+    border: 1px solid #da8911;
+    color: #da8911;
+    display: inline-block;
+    margin-left: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+.booking-form p{
+    font-size: 2rem;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    margin: 0.7rem 0;
+}
+
+/* our chefs css */
+.our-chefs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+.our-chefs h2{
+    font-family: 'Pacifico', 'cursive';
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #da8911;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-chefs h2::after,.our-chefs h2::before{
+    content: "";
+    width: 3rem;
+    color: #da8911;
+    display: inline-block;
+    border: 1px solid #da8911;
+    margin: 0.4rem 0.7rem;
+}
+.our-chefs p{
+    font-size: 2.5rem;
+    color: #0F172B;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    margin: 0.7rem 0;
+    display: flex;
+    justify-content: center;
+}
+.our-chefs .chefs{
+    display: flex;
+    gap: 2.5rem;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.chefs p{
+    font-size: 1rem;
+    color: #0f172bbe;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.chef h4{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+.our-chefs .chefs img{
+    border-radius: 50%;
+    width: 100%;
+    cursor: pointer;
+}
+.our-chefs .chefs img:hover{
+    transform: scale(90%);
+    transition: 1s;
+}
+.our-chefs .chef{
+    width: 15rem;
+}
+
+/* Our Clients ccss */
+.our-clients .heading-clients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading-clients h2{
+    font-size: 1.5rem;
+    color: #da8911;
+    font-family: 'Pacifico', 'cursive';
+    font-weight: 500;
+}
+.heading-clients h2::after,.heading-clients h2::before{
+    width: 3rem;
+    border: 1px solid #da8911;
+    content: "";
+    display: inline-block;
+    margin: 0.5rem 1rem;
+}
+.heading-clients p{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+}
+.clients{
+    display: flex;
+    gap: 1rem;
+    padding: 0 5rem;
+    margin: 2rem 0;
+}
+.client{
+    width: 20rem;
+    background-color: #da8911;
+    box-shadow: 0px 0px 1px black;
+    padding: 1rem;
+    color: white;
+    border-radius: 10px;
+}
+.client p{
+    color: rgba(255, 255, 255, 0.877);
+}
+.client span{
+    color: rgba(255, 255, 255, 0.897);
+}
+.client-info img{
+    border-radius: 50%;
+    width: 3.5rem;
+}
+.clients .client-info{
+    display: flex;
+    margin-top: 1rem;
+}
+.client-info h4{
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+}
+.client-info h4 span{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.client .fa-solid{
+    font-size: 2.5rem;
+}
+
+/* footer section */
+footer{
+    background-color: #0F172B;
+    color: white;
+    padding: 3rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+footer .flex{
+   
+    
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: fit-content;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+footer li{
+    line-height: 0.5;
+    cursor: pointer;
+}
+footer li:hover{
+    color: #da8911;
+    text-decoration: underline;
+}
+footer i{
+    margin-right: 0.5rem;
+}
+footer h2{
+    color: #da8911;
+    font-family: 'Pacifico', 'cursive';
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+footer input{
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+
+
+/* Responsive Design */
